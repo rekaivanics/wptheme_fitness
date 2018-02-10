@@ -1,0 +1,35 @@
+p {
+  line-height: 1.5;
+}
+h1,h2,h3,h4 {
+  font-family: 'Racing Sans One';
+  line-height: 1.1;
+}
+h1,h2 {
+  font-size: 48px;
+  margin: 0 0 15px 0;
+  text-transform: uppercase;
+}
+h3 {
+  font-size: 34px;
+}
+h4 {
+  font-size: 26px;
+  color: #b0f045;
+  margin: 0 0 10px 0;
+}
+.align-center {
+  text-align: center;
+}
+@media only screen and (max-width: 768px) {
+  h1,h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 26px;
+  }
+  h4 {
+    font-size: 22px;
+  }
+
+}

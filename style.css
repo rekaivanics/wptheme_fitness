@@ -1,0 +1,384 @@
+body {
+  background: #0d0d17 url(img/body.png) top center repeat;
+  color: #fff;
+  font-family: 'Yantramanav';
+  font-size: 18px;
+}
+a {
+  color: #b0f045;
+  text-decoration: none;
+}
+.button {
+  font-size: 20px;
+  font-weight: bold;
+  background: #b0f045;
+  color: #000;
+  display: inline-block;
+  height: 38px;
+  line-height: 38px;
+  padding: 0 20px 0 15px;
+  text-transform: uppercase;
+  position: relative;
+}
+.button::before {
+  content: "";
+  top: 0;
+  right: -10px;
+  background: #b0f045;
+  position: absolute;
+  display: block;
+  height: 38px;
+  width: 20px;
+  transform: skew( -20deg, 0deg);
+}
+.button::after {
+  content: "";
+  top: 0;
+  right: -5px;
+  background: #b0f045;
+  position: absolute;
+  display: block;
+  height: 38px;
+  width: 10px;
+  transform: skew( -20deg, 0deg);
+  border-left: solid 3px #000;
+  border-right: solid 3px #000;
+}
+.center-box {
+  margin: 0 auto;
+  width: 1200px;
+  overflow: hidden;
+}
+header {
+  padding: 15px 0;
+  background: rgba(13,13,23,1);
+  background: -moz-linear-gradient(top, rgba(13,13,23,1) 0%, rgba(13,13,23,0) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(13,13,23,1)), color-stop(100%, rgba(13,13,23,0)));
+  background: -webkit-linear-gradient(top, rgba(13,13,23,1) 0%, rgba(13,13,23,0) 100%);
+  background: -o-linear-gradient(top, rgba(13,13,23,1) 0%, rgba(13,13,23,0) 100%);
+  background: -ms-linear-gradient(top, rgba(13,13,23,1) 0%, rgba(13,13,23,0) 100%);
+  background: linear-gradient(to bottom, rgba(13,13,23,1) 0%, rgba(13,13,23,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0d0d17', endColorstr='#0d0d17', GradientType=0 );
+}
+#logo {
+  float: left;
+  margin-top: 20px;
+}
+#logo a {
+  width: 225px;
+  height: 40px;
+  display: block;
+  background: url(img/gorilla.svg) top left no-repeat;
+  background-size: 100% auto;
+  margin-bottom: 20px;
+}
+#navigation {
+  float: right;
+  margin-top: 27px;
+}
+.inner-page {
+  margin-bottom: 60px;
+  background-color: #0d0d17;
+}
+nav ul {
+  float: right;
+}
+nav ul li{
+  float: left;
+  text-align: left;
+  margin-right: 17px;
+}
+nav ul li a{
+  display: inline-block;
+  color: white;
+  font-size: 16px;
+  padding-right: 30px;
+  text-transform: uppercase;
+  position: relative;
+}
+nav ul li a::before{
+  content: "/";
+  top: 0;
+  right: 12px;
+  position: relative;
+  color: #b0f045;
+  font-weight: bold;
+}
+nav ul li a:hover{
+  color: #b0f045;
+}
+nav ul li:last-of-type a {
+  padding: 0;
+}
+#top {
+  background: url(img/welcome_1.jpg) top center no-repeat;
+}
+#intro {
+  width: 45%;
+  margin: 150px 0;
+}
+#intro p, #services p, #offer p, #team p {
+  margin: 0 0 15px 0;
+}
+#services {
+  padding: 70px 0;
+  box-shadow: 0 0 8px rgba(0,0,0,0.9)
+}
+.service {
+  margin-bottom: 40px;
+  position: relative;
+}
+.service:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 35%;
+  display: block;
+  background: rgba(0,0,0,0);
+  background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.48) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,0)), color-stop(100%, rgba(0,0,0,0.48)));
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.48) 100%);
+  background: -o-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.48) 100%);
+  background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.48) 100%);
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.48) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
+}
+.service img {
+  width: 100%;
+}
+.service .button {
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+}
+#offer {
+  background: url(img/offer_1.jpg) top center no-repeat;
+  padding: 70px 0;
+  box-shadow: inset 0 0 8px rgba(0,0,0,0.9)
+
+}
+#offer-text {
+  float: right;
+  width: 50%;
+  padding: 50px 50px 50px 20px;
+}
+#offer h3 {
+  color: #b0f045;
+  margin: 0 0 15px 0;
+}
+#offer ul {
+  margin: 0 0 20px 0;
+  overflow: hidden;
+}
+#offer ul li {
+  margin-bottom: 8px;
+  line-height: 1.4;
+  position: relative;
+  padding-left: 30px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+#offer ul li::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: block;
+  border-radius: 50%;
+  background: #b0f045;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -10px;
+}
+#offer ul li::after {
+  content: "";
+  width: 8px;
+  height: 12px;
+  display: block;
+  position: absolute;
+  left: 6px;
+  top: 50%;
+  margin-top: -8px;
+  border-bottom: solid 2px black;
+  border-right: solid 2px black;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+#team {
+  overflow: hidden;
+  padding: 70px 0;
+  margin-bottom: 30px;
+}
+.team-member {
+  background: #0e0e18;
+  margin-bottom: 40px;
+}
+.team-member img {
+  width: 100%;
+}
+.team-text {
+  padding: 20px;
+  line-height: 24px;
+  background: #0e0e18;
+  margin-bottom: 40px;
+}
+.team-text p {
+  margin: 0 0 15px 0;
+}
+#testimonials {
+  overflow: hidden;
+  clear: both;
+  background: url(img/testi-bg.jpg) top center no-repeat;
+  padding: 70px 50% 55px 40px;
+  box-shadow: inset 0 0 8px rgba(0,0,0,0.9)
+}
+#testimonials h3 {
+  color: #b0f045;
+  margin: 0 0 15px 0;
+}
+#testimonials p {
+  margin: 0 0 15px 0;
+}
+footer {
+  background: #0e0e18;
+  padding: 70px 0;
+  font-size: 16px;
+}
+footer h3 {
+  margin: 0 0 10px  0;
+  color: #b0f045;
+}
+footer p, footer time {
+  margin: 0 0 10px  0;
+}
+#copyright {
+  padding: 15px 0;
+  color: #999;
+  font-size: 14px;
+  background: #07070c;
+}
+.social ul {
+  margin: 30px 0 0 0;
+  overflow: hidden;
+}
+.social li {
+  width: 40px;
+  height: 40px;
+  float: left;
+  margin-right: 10px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: block;
+}
+.social li a {
+  width: 40px;
+  height: 40px;
+  border: solid 2px #fff;
+  border-radius: 50%;
+  display: inline-block;
+  background-size: auto 16px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.social li a:hover {
+  border-color: #b0f045;
+}
+.facebook a {
+  background: url(img/facebook.svg) center center no-repeat;
+}
+.twitter a {
+  background: url(img/twitter.svg) center center no-repeat;
+}
+.gplus a {
+  background: url(img/gplus.svg) center center no-repeat;
+}
+.linkedin a {
+  background: url(img/linkedin.svg) center center no-repeat;
+}
+.youtube a {
+  background: url(img/youtube.svg) center center no-repeat;
+}
+time {
+  font-size: 16px;
+}
+.widget {
+  margin-bottom: 30px;
+}
+.widget h4  {
+  color: #fff!important;
+}
+article:nth-of-type(odd) {
+  clear: left;
+}
+
+
+@media only screen and (max-width: 768px) {
+    #logo {
+    float: none;
+    margin: 0 0 15px 0;
+  }
+    #logo a {
+    margin: 0 auto;
+  }
+    #navigation, nav ul, nav ul li {
+      float: none;
+    }
+    nav ul li a::before{
+      content: "";
+    }
+    nav ul li a {
+      padding: 10px 0!important;
+      border-bottom: solid 1px #fff;
+      display: block;
+    }
+    #intro {
+      width: 100%;
+      margin: 50px 0 350px 0;
+    }
+    #top {
+      background-position: bottom right 27%;
+      background-size: 300% auto;
+    }
+    #offer-text {
+      float: left;
+      width: 100%;
+    }
+    #offer {
+      background-color: #0e0e18;
+      background-position: bottom left 20%;
+      background-size: 220% auto;
+      padding: 40px 0 300px 0;
+    }
+    #testimonials {
+      background-position: bottom right;
+      background-size: cover;
+      padding: 30px 20px 20px 20px;
+      position: relative;
+    }
+    #testimonials::before {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+    }
+    #testimonials h3, #testimonials p {
+      position: relative;
+      z-index: 1;
+    }
+    footer {
+      padding: 30px 0;
+    }
+    footer .one-third {
+      margin-bottom: 50px;
+    }
+}
