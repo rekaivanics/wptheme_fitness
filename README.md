@@ -7,4 +7,4 @@ Modern, dark background fully responsive WordPress theme for a gym.
 
 Live demo: http://myblog.ivanicsreka.eu/
 
-![]()
+![Gym WordPress theme](https://github.com/rekaivanics/wptheme_fitness/blob/master/gorilla.png)
